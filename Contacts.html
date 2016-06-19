@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Contacts</title>
+		<link rel="stylesheet" href="css/contacts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style1.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		
+	</head>
+	<body style=background-color:white;>
+<!--==============================header=================================-->
+		
+			<header>
+			
+					<h1><a href="Home.html" style=" height:100px ;width:380px; "><img src="images/thedevelopers.png" alt="TheDevEloPerS" style=" height:100px ;width:380px; "></a></h1>
+					<div class="menu_block">
+						<nav id="bt-menu" class="bt-menu">
+							<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+							<ul>
+								<li class="bt-icon"><a href="Home.html">Home</a></li>
+								<li class="bt-icon"><a href="About.html">About</a></li>
+	                       		<li class="bt-icon" style="width:52px; "><a href="Projects.html">Projects</a></li>
+								<li class="current bt-icon" style="width:52px; color:#009fb3; "><a href="Contacts.html">Contacts</a></li></ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+					<div class="clear"></div>
+				
+		</header>
+
+<!--==============================Content=================================-->
+
+<br><p><span  style="padding-left:620px; padding-top:50px; padding-bottom:5px; color:black; font: bold 35px Times New Roman;">Find us</span><p>
+
+<div id="map">
+
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:500px;width:970px;'>
+<div id='gmap_canvas' style='height:500px;width:970px;'>
+</div>
+<style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+</div> <a href='https://embedmaps.net'>add google map to your website</a>
+ <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=32d0f6c020279b050b01470c15354e5fea074266'></script>
+<script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(33.8558023,72.39441349999993),mapTypeId: google.maps.MapTypeId.ROADMAP};
+map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(33.8558023,72.39441349999993)});
+infowindow = new google.maps.InfoWindow({content:'<strong>Pakistan Aeronautical Complex</strong><br><br> Kamra<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+</div>
+
+<div id="contact">
+
+<p><span  style="color:black; font: bold 30px Times New Roman;">Contact Us</span></p>
+<p><span  style="font: 25px Times New Roman;">We Are Your</span><span  style=" color:#009fb3; font: 25px Times New Roman;"> Friends </span></p>
+
+</div>
+
+<div id= "contact1">
+
+<p><span  style="color: black; font: 18px Times New Roman;">For Any Kind of</span>
+<span  style=" color:#009fb3; font: italic 19px Times New Roman;"> Web Designing & Development Solutions</span>
+<span  style="color: black; font: 18px Times New Roman;">Feel Free to Contact Us</span>
+</p>
+
+</div>
+<div id="main">
+<div id="address">
+<p><span  style=" color:#009fb3; font: 25px Agency FB;">TheDevEloPerS</span></p>
+<p><span  style="color: black; font: 20px Agency FB; padding-left:7px;">Kamra Pakistan</span></p>
+<br>
+<p>
+<span  style="color: black; font: 20px Agency FB; ">Phone Numbers: <span  style=" color:#009fb3; font: 18px Agency FB;">&nbsp +92 345-5649387</span></span>
+<br><span  style=" color:#009fb3; font: 18px Agency FB; padding-left:105px;">&nbsp +92 301-5713542</span>
+<br><span  style=" color:#009fb3; font: 18px Agency FB; padding-left:105px;">&nbsp +92 334-5128578</span>
+</p>
+
+</div>
+
+<div id="form">
+<p><img src="images/mail.png" alt="Mail" width=30px height=30px><span  style=" color:#009fb3; font: 25px Agency FB;">&nbsp SEND A MESSAGE</span></p>
+ <form action=method:"post">
+
+<span  style="color: black; font: 22px Agency FB;">Name</span><br>
+<input type="text" name="fullname"  size="38"  placeholder="Name" required>
+<br>
+<span  style="color: black; font: 22px Agency FB;">Subject</span><br>
+<input type="text" name="subject"  size="38" placeholder="Subject" required >
+<br>
+<span  style="color: black; font: 22px Agency FB;">Email</span><br>
+<input type="text" name="email"  size="38" placeholder="Email"  required>
+<br>
+<span  style="color: black; font: 22px Agency FB;">Your Message</span><br>
+<textarea rows="8" cols="40" name="address" placeholder="Your message" required>
+</textarea>
+<br>
+<label style="padding-right:190px"></label>
+<input type="reset" name="reset" value="Reset">
+<input type="submit" name="submit" value="Submit">
+
+</form>
+</div>
+
+</div>
+<!--==============================Footer=================================-->
+
+<div id="footer">
+<a href="#"><img src="images/facebook.png" alt="" style=" height:30px; width:50px; padding-top: 30px;  padding-left: 8px; padding-right: 32px;"></a>
+
+<a href="#"><img src="images/twitter.jpg" alt="" style=" height:33px; width:53px; padding-top: 30px; padding-right: 30px;"></a>
+
+<a href="#"><img src="images/google.png" alt="" style=" height:35px; width:55px; padding-top: 30px; "></a><br><br>
+	<span  style="color:black;">TheDevEloPerS &copy; 2016 | Privacy Policy</span><br>
+ <a href="#"><span  style="color:#4B0082;">thedevelopers@gmail.com</span></a>
+</div>
+
+<script>
+		$(document).ready(function(){
+			$(".bt-menu-trigger").toggle(
+				function(){
+					$('.bt-menu').addClass('bt-menu-open');
+				},
+				function(){
+					$('.bt-menu').removeClass('bt-menu-open');
+				}
+			);
+		});
+		</script>
+	</body>
+</html>
